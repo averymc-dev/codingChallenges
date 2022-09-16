@@ -13,7 +13,7 @@ function checkExam(array1, array2) {
       score += 0
     }else if(array1[i] != array2[i]){
       score -= 1
-    }else { score += 4 }
+    }else { score += 4 } // Not ideal to make this the default condition, but it worked for the tests
   }
   if(score < 0){
     return 0
