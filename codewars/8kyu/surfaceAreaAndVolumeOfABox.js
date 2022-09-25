@@ -10,5 +10,14 @@ function getSize(width, height, depth){
   return result
 }
 
-getSize(4, 2, 6)
-getSize(10, 10, 10)
+getSize(4, 2, 6) // [88,48]
+getSize(10, 10, 10) // [600,1000]
+
+// PART 2 - THE RETURNALIST
+const getSize = (wid, hgt, dpt) => {
+  let ans = [];
+  const surf = (2*(wid*hgt)) + (2*(wid*dpt)) + (2*(hgt*dpt));
+  const volume = wid*hgt*dpt;
+  ans.push(surf, volume);
+  return ans;
+}
