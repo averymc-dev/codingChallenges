@@ -9,3 +9,6 @@ function maps(x){
 }
 
 maps([2,2,2])
+
+// Second attempt (2/11/2023)
+const doubles = x => x.map(e => e * 2)
