@@ -11,3 +11,6 @@ function past(h, m, s){
   }
 
 past(0,1,1) 
+
+// REFACTORED SOLUTION 2/14/2023
+const timeSince = (h, m, s) => (h*3600000) + (m*60000) + (s*1000)
