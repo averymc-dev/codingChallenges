@@ -23,3 +23,8 @@ console.log(cubeChecker(-1, 2), false)
 console.log(cubeChecker(8, 2), true)
 console.log(cubeChecker(-8,-2), false)
 console.log(cubeChecker(0, 0), false)
+
+/*TOP CODEWARS SOLUTION
+var cubeChecker = function(volume, side){
+  return Math.pow(side, 3) === volume && side > 0;
+};*/
