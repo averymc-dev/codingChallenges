@@ -2,14 +2,17 @@
 Your harried co-workers are looking to you for a solution to take this garbled text and remove all of the numbers. Your program will take in a string and clean out all numeric characters, and return a string with spacing and special characters ~#$%^&!@*():;"'.,? all intact.
 */
 
-function stringClean(s){
-  string = s.split('')
-  let finalStr = []
-  for(let i=0; i<string.length; i++){
-    if(string[i]>0){
-    }else { finalStr.push(string[i]) }
+function stringClean(str) {
+  str=str.split('')
+  const num = '1234567890'.split('')
+  for(let i=0; i<str.length; i++){
+    for(let j=0; j<num.length; j++){
+      if(str[i] === num[j]){
+        str.splice(i, 1)
+      }
+    }
   }
-  return finalStr.join('')
+  return str.join('')
 }
 
 stringClean('My "messy" data issues! Will they ever, ever be so0lved?')
