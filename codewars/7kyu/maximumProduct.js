@@ -12,3 +12,5 @@ function adjacentElementsProduct(arr){
 adjacentElementsProduct([1, 2, 3]) // 6
 adjacentElementsProduct([5, 8]) // 40
 adjacentElementsProduct([9, 5, 10, 2, 24, -1, -48]) // 50
+
+// INCOMPLETE
