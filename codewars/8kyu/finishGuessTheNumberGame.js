@@ -42,3 +42,19 @@ class Guesser {
     return n === this.number
   }
 }*/
+
+/* UPDATED SOLUTION OF MY OWN
+class Guesser {
+  constructor(number, lives) {
+    this.number = number;
+    this.lives = lives;
+  }
+  
+  guess(n) {
+    if(this.lives < 1) throw Error
+    if(n != this.number){
+      this.lives--
+      return false;      
+    } else { return true }
+  }
+}*/
