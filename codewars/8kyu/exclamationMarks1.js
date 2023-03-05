@@ -10,3 +10,8 @@ function remove(str){
 
 remove("Hi!") // "Hi"
 remove("Hi!!!") // "Hi!!"
+
+/*TOP SOLUTION
+function remove(s) {
+  return s.endsWith('!') ? s.slice(0, -1) : s;
+}*/
