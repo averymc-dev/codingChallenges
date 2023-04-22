@@ -13,3 +13,8 @@ trueOrFalse(123) // "true"
 trueOrFalse("123") // "true"
 trueOrFalse(["123"]) // "true"
 trueOrFalse("false") // "true"
+
+/*TOP SOLUTION
+function trueOrFalse(val){
+  return Boolean(val).toString();
+}*/
