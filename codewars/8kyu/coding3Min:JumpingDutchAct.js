@@ -35,8 +35,9 @@ sc(6) // "Aa~ Aa~ Aa~ Aa~ Aa~ Pa! Aa!"
 sc(7) // "Aa~ Aa~ Aa~ Aa~ Aa~ Aa~ Pa!"
 sc(1) // ""
 
+/*TOP SOLUTION
 function sc(floor){
   if(floor <= 1) return "";
   
   return 'Aa~ '.repeat(floor-1) + 'Pa!' + (floor<=6 ? ' Aa!': '');
-}
+}*/
