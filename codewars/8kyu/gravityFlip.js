@@ -16,3 +16,12 @@ console.log(flip('?', [ 13, 2, 4, 7, 93 ]), [ 2, 4, 7, 13, 93 ]) // test case th
 console.log(flip('?', [ 96, 82, 81, 76, 75, 74, 69, …(14) ]), [ 100, 96, 82, 81, 76, 75, 74, …(14) ]) // test case that did not pass
 
 // INCOMPLETE 7/24/2023
+// COMPLETED SOLUTION:
+function flip(d,a){
+  if(d === 'R'){
+    return a.sort((a,b) => a - b)
+  } else { return a.sort ((a,b) => (b - a)) }
+} 
+
+// TOP SOLUTION
+const flip = (d, a) => a.sort((x, y) => d === 'R' ? x - y : y - x);
