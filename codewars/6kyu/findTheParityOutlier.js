@@ -3,8 +3,7 @@
 function findOutlier(arr){
   let [evenArr, oddArr] = [[], []]
   arr.forEach(x => {
-    const el = x
-    return el % 2 == 0 ? evenArr.push(el) : oddArr.push(el)
+    return x % 2 == 0 ? evenArr.push(x) : oddArr.push(x)
   })
   if(evenArr.length > 0  && oddArr.length > 0){
     return evenArr.length > oddArr.length ? oddArr[0] : evenArr[0]
