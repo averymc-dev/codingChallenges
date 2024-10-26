@@ -17,3 +17,8 @@ function divCon(x){
 
 divCon([9, 3, '7', '3']) // 2
 divCon(['5', '0', 9, 3, 2, 1, '9', 6, 7]) // 14
+
+/*TOP SOLUTION
+function divCon(x){
+  return x.reduce((acc, cur) => typeof cur === 'number'? acc + cur : acc - Number(cur),0)
+}*/
