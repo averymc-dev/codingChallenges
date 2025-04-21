@@ -21,8 +21,6 @@ function isSortedAndHow(array) {
   return isAscending ? 'yes, ascending' : isDescending ? 'yes, descending' : 'no'
 }
 
-function isAscending()
-
 isSortedAndHow([1, 2]) // 'yes, ascending'
 isSortedAndHow([15, 7, 3, -8]) // 'yes, descending'
 isSortedAndHow([4, 2, 30]) // 'no'
