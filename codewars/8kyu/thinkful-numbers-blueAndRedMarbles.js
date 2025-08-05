@@ -22,4 +22,9 @@ guessBlue(5, 5, 2, 3) // 0.6
 guessBlue(5, 7, 4, 3) // 0.2
 guessBlue(12, 18, 4, 6) // 0.4
 
-//3rd test has issues
+/* UPDATED SOLUTION
+function guessBlue(blue, red, blueOut, redOut){
+  const blueRemaining = blue - blueOut
+  const redRemaining = red - redOut
+  return blueRemaining / (blueRemaining + redRemaining)
+}*/
