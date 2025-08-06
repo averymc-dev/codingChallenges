@@ -9,4 +9,7 @@ function parseF(s) {
 parseF("1") // 1.0
 parseF("0") // 0
 
-//INCOMPLETE
+/*UPDATED SOLUTION
+function parseF(num){
+  return isNaN(parseFloat(num)) ? null : parseFloat(num)
+}*/
