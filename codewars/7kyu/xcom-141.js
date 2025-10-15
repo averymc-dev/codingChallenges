@@ -48,3 +48,8 @@ function applyFeedback(battlescape, enemy, position) {
 
 applyFeedback("👮🚗👽🏠🚒", "👽", 2) // DISPENSE_TREAT
 applyFeedback("👮🚗👽🏠🚒", "👽", 0) // RELEASE_NITROGEN_SHOWER
+
+/*TOP SOLUTION
+function applyFeedback(s,e,p){
+  return [...s][p]===e ? DISPENSE_TREAT : RELEASE_NITROGEN_SHOWER
+}*/
